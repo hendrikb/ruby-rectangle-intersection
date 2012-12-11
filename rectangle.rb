@@ -9,16 +9,8 @@ class Rectangle
     @bottom_right = bottom_right
   end
 
-  def beginning
-    @top_left.x
-  end
-
-  def starts? point
-    @top_left == point
-  end
-
-  def end
-    @bottom_right.x
+  def range
+    @top_left.x..@bottom_right.x
   end
 
   def to_s
