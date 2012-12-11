@@ -19,6 +19,11 @@ class Rectangle
     @top_left.x...@bottom_right.x
   end
 
+  def height
+    @bottom_left.y...@top_right.y
+  end
+
+
   def to_s
     "#{@name.upcase}: bottom_left #{@bottom_left}, top_right #{@top_right}"
   end
