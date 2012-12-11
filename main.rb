@@ -1,4 +1,4 @@
-require_relative './sweep_line:_status.rb'
+require_relative './sweep_line_status.rb'
 require_relative './rectangle.rb'
 require_relative './point.rb'
 
