@@ -28,7 +28,6 @@ end
 
 event_point_schedule.sort! { |a,b| a.x <=> b.x }
 
-require 'pry'; binding.pry
 while not event_point_schedule.empty? do
   event_point = event_point_schedule.delete_at(0)
   break unless event_point
