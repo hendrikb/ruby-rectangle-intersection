@@ -10,7 +10,8 @@ class Rectangle
   end
 
   def range
-    @top_left.x..@bottom_right.x
+    # The right x is excluded
+    @top_left.x...@bottom_right.x
   end
 
   def to_s
