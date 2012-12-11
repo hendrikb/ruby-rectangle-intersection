@@ -1,12 +1,17 @@
 require_relative './point.rb'
 
 class Rectangle
-  attr_accessor :top_left, :bottom_right, :name
+  attr_reader :top_left, :top_right, :bottom_left, :bottom_right, :name
 
-  def initialize name, top_left, bottom_right
+  def initialize name, bottom_left, top_right
     @name = name
-    @top_left = top_left
-    @bottom_right = bottom_right
+    @bottom_left = bottom_left
+    @top_right = top_right
+
+    @bottom_right = Point.new top_right.x, bottom_left.y
+    @top_left = Point.new bottom_left.x, top_right.y
+
+
   end
 
   def range
@@ -15,6 +20,6 @@ class Rectangle
   end
 
   def to_s
-    "#{@name.upcase}: top_left #{@top_left}, bottom_right #{@bottom_right}"
+    "#{@name.upcase}: bottom_left #{@bottom_left}, top_right #{@top_right}"
   end
 end
