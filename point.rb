@@ -1,12 +1,12 @@
 class Point
-  attr_accessor x,y
+  attr_accessor :x,:y
 
   def initialize x,y
-    self.x = x
-    self.y = y
+    @x = x
+    @y = y
   end
 
   def to_s
-    "(#{x}:#{y})"
+    "(#{@x}:#{@y})"
   end
 end
