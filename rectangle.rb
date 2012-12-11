@@ -23,6 +23,13 @@ class Rectangle
     @bottom_left.y...@top_right.y
   end
 
+  def intersect? another_rectangle
+    [ another_rectangle.bottom_right, another_rectangle.bottom_left,
+      another_rectangle.top_right, another_rectangle.top_left].each do |point|
+        return true if range.include?(point.x) and height.include?(point.y)
+    end
+    return false
+  end
 
   def to_s
     "#{@name.upcase}: bottom_left #{@bottom_left}, top_right #{@top_right}"
