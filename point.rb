@@ -6,6 +6,10 @@ class Point
     @y = y
   end
 
+  def == point
+    @x == point.x and @y == point.y
+  end
+
   def to_s
     "(#{@x}:#{@y})"
   end
