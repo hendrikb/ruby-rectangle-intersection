@@ -22,8 +22,8 @@ rectangles = [
 
 
 rectangles.each do |rectangle|
-  event_point_schedule.push EventPoint.new(rectangle.top_left.x, rectangle)
-  event_point_schedule.push EventPoint.new(rectangle.bottom_right.x, rectangle)
+  event_point_schedule.push EventPoint.new(rectangle.bottom_left.x, rectangle)
+  event_point_schedule.push EventPoint.new(rectangle.top_right.x, rectangle)
 end
 
 event_point_schedule.sort! { |a,b| a.x <=> b.x }
