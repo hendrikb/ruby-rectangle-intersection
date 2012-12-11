@@ -1,3 +1,0 @@
-class Interval < Range
-
-end
