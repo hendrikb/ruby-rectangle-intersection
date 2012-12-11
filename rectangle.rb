@@ -13,6 +13,10 @@ class Rectangle
     @top_left.x
   end
 
+  def starts? point
+    @top_left == point
+  end
+
   def end
     @bottom_right.x
   end
