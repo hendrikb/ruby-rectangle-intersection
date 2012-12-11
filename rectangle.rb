@@ -18,6 +18,6 @@ class Rectangle
   end
 
   def to_s
-    "#{@name.upcase!}: top_left #{@top_left}, bottom_right #{@bottom_right}"
+    "#{@name.upcase}: top_left #{@top_left}, bottom_right #{@bottom_right}"
   end
 end
