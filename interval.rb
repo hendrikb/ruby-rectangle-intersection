@@ -1,0 +1,3 @@
+class Interval < Range
+
+end
