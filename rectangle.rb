@@ -10,8 +10,6 @@ class Rectangle
 
     @bottom_right = Point.new top_right.x, bottom_left.y
     @top_left = Point.new bottom_left.x, top_right.y
-
-
   end
 
   def range
